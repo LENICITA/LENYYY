@@ -1,0 +1,18 @@
+db.Refrigerios.insertOne({
+    Nombre_Refrigerio: "Barrita de Granola",
+    Descripcion_Refrigerio: "Barrita de granola con almendras y miel, ideal como snack saludable.",
+    Precio: 1.99
+})
+
+db.Ingredientes.insertMany([
+    { Nombre_Ingrediente: "Granola" },
+    { Nombre_Ingrediente: "Almendras" },
+    { Nombre_Ingrediente: "Miel" }
+])
+
+db.Refrigerios_Ingredientes.insertMany([
+    { ID_Refrigerio: 1, ID_Ingrediente: 1, Cantidad_Ingrediente: 100 },
+    { ID_Refrigerio: 1, ID_Ingrediente: 2, Cantidad_Ingrediente: 20 },
+    { ID_Refrigerio: 1, ID_Ingrediente: 3, Cantidad_Ingrediente: 10 }
+])
+
