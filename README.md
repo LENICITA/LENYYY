@@ -1,2 +1,0 @@
-# LENYYY
-NADA
